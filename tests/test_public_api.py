@@ -17,7 +17,7 @@ from cqlib_vqe import chemistry, vqe
 
 
 def test_canonical_package_metadata_and_exports():
-    assert cqlib_vqe.__version__ == "0.1.0"
+    assert cqlib_vqe.__version__ == "0.1.0-beta.1"
     assert cqlib_vqe.UCCSDFactory is vqe.UCCSDFactory
     assert cqlib_vqe.MolecularDataEngine is chemistry.MolecularDataEngine
     assert cqlib_vqe.TianyanEnergyEstimator is vqe.TianyanEnergyEstimator

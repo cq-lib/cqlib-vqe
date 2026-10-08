@@ -19,3 +19,4 @@ run_outputs/
 credentials.json
 *.Zone.Identifier
 .DS_Store
+.idea/
