@@ -119,8 +119,10 @@ def test_prepare_measures_only_group_support_and_remaps_physical_qubits():
     assert "H Q5" not in script
     assert "RZ Q5 3.141592653589793" in script
     assert "Y2P Q5" in script
-    assert "M Q5" in script
-    assert "M Q9" not in script
+    # Modified: match complete QCIS lines to avoid confusing Y2M with M.
+    script_lines = script.splitlines()
+    assert "M Q5" in script_lines
+    assert "M Q9" not in script_lines
 
 
 def test_strict_ordered_results_compute_energy_from_counts_only():
