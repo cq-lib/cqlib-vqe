@@ -1,8 +1,6 @@
 numpy>=2.1
 scipy>=1.11
-# cqlib 1.4.0b1 is the PEP 440 form of Cargo 1.4.0-beta1.
-# Do not use cqlib>=0.1.0: PyPI resolves that to classic 1.3.11 (no cqlib.ir).
-cqlib>=1.4.0b1
+cqlib>=2.0.0b1
 openfermion>=1.6
 openfermionpyscf>=0.5
 pyscf>=2.6

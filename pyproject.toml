@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cqlib-vqe"
-version = "0.1.0"
+version = "0.1.0-beta.1"
 description = "Adaptive canonical singlet-UCCSD and active-space VQE for cqlib 2.x"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -28,13 +28,14 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Chemistry",
 ]
 dependencies = [
     "numpy>=2.1",
     "scipy>=1.11",
-    "cqlib>=1.4.0b1",
+    "cqlib>=2.0.0b1",
 ]
 
 [project.optional-dependencies]
